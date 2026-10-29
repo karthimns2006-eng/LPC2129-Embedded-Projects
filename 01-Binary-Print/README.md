@@ -67,6 +67,8 @@ The demonstration video shows the binary counting project running on the hardwar
 - Using bitwise operations for port manipulation.
 - Debugging and testing microcontroller programs.
 
+<video src="Video/Binary_Print.mp4" controls width="600"></video>
+
 🏷️ Technologies
 
 "LPC2129" "ARM7" "Embedded C" "Keil µVision" "GPIO" "LED Interfacing"
