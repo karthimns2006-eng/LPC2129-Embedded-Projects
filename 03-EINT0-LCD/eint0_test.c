@@ -1,3 +1,4 @@
+//eint0_test.c
 //Write an ECP to demonstrate External interrupt 0 in LPC2129?
 #include <LPC21xx.h>
 
@@ -41,9 +42,9 @@ void Enable_EINT0(void)
 	
 	//enable EINT0 via VIC (by using VICIntEnable SFR)
 	VICIntEnable = 1<<EINT0_VIC_CHNO;
-	//enable vectored irq slot 0 for EINT0 (0-15 based on requirement – by using VICVectCntl0 SFR)
+	//enable vectored irq slot 0 for EINT0 (0-15 based on requirement ï¿½ by using VICVectCntl0 SFR)
 	VICVectCntl0 = (1<<5)|EINT0_VIC_CHNO;
-	//load isr address into slot 0 (0-15 based on requirement – by using VICVectAddr0 SFR)
+	//load isr address into slot 0 (0-15 based on requirement ï¿½ by using VICVectAddr0 SFR)
 	VICVectAddr0 = (unsigned int)eint0_isr;
 	
 	//configure External Interrupts Peripheral

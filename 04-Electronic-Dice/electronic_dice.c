@@ -1,6 +1,7 @@
 /*
+electronic_dice.c
 Write an Embedded C program to display a digital clock (HH:MM:SS) 
-and date (DD/MM/YYYY) on a 16×2 LCD. 
+and date (DD/MM/YYYY) on a 16ï¿½2 LCD. 
 Initialize the LCD, display a welcome message, 
 and continuously update the time and date using nested loops.
 */
@@ -136,7 +137,7 @@ void delay_us(unsigned int dlyUS)
 {
 	dlyUS *= 12;		// Scale the input value.
 	                // Each loop iteration consumes ~5 CPU cycles.
-	                // 5 cycles × 12 iterations = 60 cycles = 1 µs (for 60 MHz CPU).
+	                // 5 cycles ï¿½ 12 iterations = 60 cycles = 1 ï¿½s (for 60 MHz CPU).
 
 	while(dlyUS--);  // Decrement then dlyUS value until it reaches 0.
 }
@@ -144,8 +145,8 @@ void delay_us(unsigned int dlyUS)
 /* Delay for milliseconds */
 void delay_ms(unsigned int dlyMS)
 {
-	dlyMS *= 12000;	// Each ms = 1,000 µs, so 12 × 1,000 = 12,000 iterations per ms.
-	                // Each iteration ~5 cycles ? 5 × 12,000 = 60,000 cycles = 1 ms.
+	dlyMS *= 12000;	// Each ms = 1,000 ï¿½s, so 12 ï¿½ 1,000 = 12,000 iterations per ms.
+	                // Each iteration ~5 cycles ? 5 ï¿½ 12,000 = 60,000 cycles = 1 ms.
 
 	while(dlyMS--); // Decrement the dlyMS value until it reaches 0.
 }

@@ -51,13 +51,13 @@ Source file: "binaryprint_portpins.c"
 
 The hardware image demonstrates the LPC2129 development board and the binary counting output.
 
-"Binary Print Hardware Output" (images/binary-print-output.jpg)
+"Binary Print Hardware Output" (Images/Binary_Print.jpeg)
 
 🎥 Project Demonstration
 
 The demonstration video shows the binary counting project running on the hardware.
 
-"View Binary Print Demo" (video/binary-print-demo.mp4)
+"View Binary Print Demo" (Video/Binary_Print.mp4)
 
 📚 Key Learnings
 

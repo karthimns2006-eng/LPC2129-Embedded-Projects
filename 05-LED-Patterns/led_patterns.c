@@ -1,4 +1,5 @@
 /*
+led_patterns.c
 Write an Embedded C Program for LPC2129 to display the following patterns on 8 Active-Low LEDs connected to Port-0:
 
 1. LEDs glow one by one from Left to Right.
@@ -12,8 +13,8 @@ Write an Embedded C Program for LPC2129 to display the following patterns on 8 A
 /* Delay for milliseconds */
 void delay_ms(unsigned int dlyMS)
 {
-	dlyMS *= 12000;	// Each ms = 1,000 µs, so 12 × 1,000 = 12,000 iterations per ms.
-	                // Each iteration ~5 cycles ? 5 × 12,000 = 60,000 cycles = 1 ms.
+	dlyMS *= 12000;	// Each ms = 1,000 ï¿½s, so 12 ï¿½ 1,000 = 12,000 iterations per ms.
+	                // Each iteration ~5 cycles ? 5 ï¿½ 12,000 = 60,000 cycles = 1 ms.
 
 	while(dlyMS--); // Decrement the dlyMS value until it reaches 0.
 }

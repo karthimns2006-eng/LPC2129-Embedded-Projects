@@ -1,3 +1,4 @@
+//eint0_lcd.c
 //Write an ECP to demonstrate External interrupt 0 in LPC2129?
 #include <LPC21xx.h>
 
@@ -68,9 +69,9 @@ void Enable_EINT0(void)
 	
 	//enable EINT0 via VIC (by using VICIntEnable SFR)
 	VICIntEnable = 1<<EINT0_VIC_CHNO;
-	//enable vectored irq slot 0 for EINT0 (0-15 based on requirement – by using VICVectCntl0 SFR)
+	//enable vectored irq slot 0 for EINT0 (0-15 based on requirement ï¿½ by using VICVectCntl0 SFR)
 	VICVectCntl0 = (1<<5)|EINT0_VIC_CHNO;
-	//load isr address into slot 0 (0-15 based on requirement – by using VICVectAddr0 SFR)
+	//load isr address into slot 0 (0-15 based on requirement ï¿½ by using VICVectAddr0 SFR)
 	VICVectAddr0 = (unsigned int)eint0_isr;
 	
 	//configure External Interrupts Peripheral
@@ -129,7 +130,7 @@ void delay_us(unsigned int dlyUS)
 {
 	dlyUS *= 12;		// Scale the input value.
 	                // Each loop iteration consumes ~5 CPU cycles.
-	                // 5 cycles × 12 iterations = 60 cycles = 1 µs (for 60 MHz CPU).
+	                // 5 cycles ï¿½ 12 iterations = 60 cycles = 1 ï¿½s (for 60 MHz CPU).
 
 	while(dlyUS--);  // Decrement then dlyUS value until it reaches 0.
 }
@@ -137,8 +138,8 @@ void delay_us(unsigned int dlyUS)
 /* Delay for milliseconds */
 void delay_ms(unsigned int dlyMS)
 {
-	dlyMS *= 12000;	// Each ms = 1,000 µs, so 12 × 1,000 = 12,000 iterations per ms.
-	                // Each iteration ~5 cycles ? 5 × 12,000 = 60,000 cycles = 1 ms.
+	dlyMS *= 12000;	// Each ms = 1,000 ï¿½s, so 12 ï¿½ 1,000 = 12,000 iterations per ms.
+	                // Each iteration ~5 cycles ? 5 ï¿½ 12,000 = 60,000 cycles = 1 ms.
 
 	while(dlyMS--); // Decrement the dlyMS value until it reaches 0.
 }
