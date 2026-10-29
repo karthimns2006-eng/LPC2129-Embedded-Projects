@@ -59,8 +59,6 @@ The demonstration video shows the binary counting project running on the hardwar
 
 "View Binary Print Demo" (Video/Binary_Print.mp4)
 
-<video src="Video/Binary_Print.mp4" controls width="600"></video>
-
 📚 Key Learnings
 
 - Practical Embedded C programming using LPC2129.
