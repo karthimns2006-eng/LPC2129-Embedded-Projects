@@ -55,7 +55,7 @@ The hardware images are available in the "Images" folder.
 
 The project demonstration video is available in the "Video" folder.
 
-[▶ Watch Digital Clock Demo](Digital_Clock.mp4)
+[▶ Watch Digital Clock Demo](Video/Digital_Clock.mp4)
 
 🏷️ Technologies
 
