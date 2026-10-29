@@ -2,7 +2,7 @@ Binary Print Using LPC2129
 
 📌 Project Overview
 
-This project demonstrates binary counting using the LPC2129 (ARM7) microcontroller. The programs display binary count values from 0 to 255 using GPIO output pins, helping to understand binary number representation and direct port manipulation in Embedded C.
+This project demonstrates binary counting using the LPC2129 (ARM7 TDMI-S) microcontroller. The programs display binary count values from 0 to 255 using GPIO output pins, helping to understand binary number representation and direct port manipulation in Embedded C.
 
 🎯 Objectives
 
@@ -59,6 +59,8 @@ The demonstration video shows the binary counting project running on the hardwar
 
 "View Binary Print Demo" (Video/Binary_Print.mp4)
 
+<video src="Video/Binary_Print.mp4" controls width="600"></video>
+
 📚 Key Learnings
 
 - Practical Embedded C programming using LPC2129.
@@ -66,8 +68,6 @@ The demonstration video shows the binary counting project running on the hardwar
 - Displaying binary values through LED interfaces.
 - Using bitwise operations for port manipulation.
 - Debugging and testing microcontroller programs.
-
-<video src="Video/Binary_Print.mp4" controls width="600"></video>
 
 🏷️ Technologies
 

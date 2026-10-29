@@ -55,6 +55,8 @@ The hardware images are available in the "Images" folder.
 
 The project demonstration video is available in the "Video" folder.
 
+[▶ Watch Digital Clock Demo](Digital_Clock.mp4)
+
 🏷️ Technologies
 
 "LPC2129" "ARM7" "Embedded C" "Keil µVision" "16×2 LCD" "GPIO Interfacing"
